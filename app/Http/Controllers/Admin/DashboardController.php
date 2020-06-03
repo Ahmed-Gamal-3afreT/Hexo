@@ -10,13 +10,15 @@ use App\User;
 class DashboardController extends Controller
 {
 
+    
     public function __construct()
     {
         $this->middleware('auth');
     }
 
+    
+    
     public function index(){
-
 
         $user = User::get()->first();
         $users = User::get();
@@ -26,13 +28,13 @@ class DashboardController extends Controller
     }
 
 
-    public function nothome(){
+    public function upload(){
 
         $user = User::get()->first();
 
 
 
-        return view('admin.dashboard.nothome', compact('user'));
+        return view('admin.dashboard.upload', compact('user'));
     }
 
 

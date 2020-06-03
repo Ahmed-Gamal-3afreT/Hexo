@@ -27,6 +27,6 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin', 'middleware' => 'auth'], 
 
 
 
-Route::get('/a', 'Admin\DashboardController@nothome');
-Route::get('admins', 'UserController@admin');
+Route::get('/upload', 'Admin\DashboardController@nothome');
+//Route::get('admins', 'UserController@admin');
 

@@ -46,6 +46,7 @@
                 <div class="col-md-4">
                     <div class="right_section">
                         <ul class="nav navbar-nav">
+                           <li><a href="{{url('admin')}}">Admin, you must login</a></li>
                             <li><a href="{{url('login')}}">Login</a></li>
                             <li><a href="{{url('register')}}">Register</a></li>
                             <li><a href="{{url('logout')}}">logout</a></li>
